@@ -1,0 +1,408 @@
+
+
+
+
+
+@font-face {
+    font-family: 'Galada';
+    src: url("../font/Galada/Galada-Regular.ttf")
+}
+
+@font-face {
+    font-family: 'Kalam';
+    src: url("../font/Kalam/Kalam-Regular.ttf")
+}
+
+
+body {
+    font-family: 'Century Gothic',sans-serif;
+
+}
+
+
+h1,h2,h4 {
+    font-family: 'Galada',cursive;
+    color: white;
+    clear: both;
+}
+
+h3{
+    font-family: 'Galada',cursive;
+    color: black;
+    clear: both;
+
+}
+
+.card-title{
+    color: black;
+}
+
+.navbar{
+}
+
+.bg-main{
+    background-image: url(../img/background-main.jpg);
+    background-size: cover;
+}
+
+.nav-link{
+    color: #fff!important;
+    font-family: 'Century Gothic', sans-serif;
+    font-size: 20px;
+    padding-left: 2rem!important;
+
+}
+
+.contato-btn-primary {
+    color: #fff;
+    background-color: red;
+    border: solid 2px;
+    border-color: red;
+    outline: none;
+}
+
+.contato-btn-primary:hover {
+    transition:0.6s;
+    color: #fff;
+    border: solid 2px;
+    border-color: red;
+    outline: none;
+    transform: scale(1.3);
+}
+
+.jumbotron{
+    background: rgba(0,0,0,0.7);
+    color: #fff;
+    border-radius: 10px;
+}
+
+.jumbotron h1,h2{
+    color: red;
+}
+
+.icon{
+    width: 400px;
+}
+
+.separador{
+    width: 500px;
+    margin: 10px;
+}
+
+@media screen and (max-width: 500px){
+    .separador{
+        width: 350px;
+
+    }
+}
+
+.icon-small{
+    width: 300px;
+}
+
+
+
+.sobre-nos p{
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+}
+
+.container h1{
+    color: red;
+}
+
+
+footer {
+    clear: both;
+    height: 120px;
+    background: rgba(0,0,0,0.9);
+
+}
+
+.cardapio{
+    margin-left: 10px;
+    padding: 50px;
+    color: black;
+
+}
+
+.lista-comida .comida-item{
+    padding: 10px;
+
+}
+
+.card-img{
+    width: 100%;
+}
+
+.lista-galeria li{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: inline-block;
+    padding: 30px;
+}
+
+.img-card-preview{
+    height: 320px;
+    width: 300px;
+    background-color: red;
+    border-radius: 30px;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.8s;
+
+}
+
+.img-card-preview:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    height: 320px;
+    width: 300px;
+    background-color: red;
+    border-radius: 30px;
+}
+
+.card{
+    margin: 3px;
+}
+
+.icon-small{
+    margin: 15px;
+    width: 100px;
+    padding: 10px;
+}
+
+.sub-card{
+    background-image: url(../img/galeria/risoto-pp.png);
+    background-color: black;
+    height: 320px;
+    width: 300px;
+    background-size: cover;
+    background-color: red;
+    border-radius: 30px;
+    position: relative;
+    overflow: hidden;
+
+
+}
+
+.sub-card:hover{
+    background-color: black;
+    transition: transform 0.8s;
+    transform-origin: center;
+    transform:scaleX(1);
+}
+
+
+
+/*------Formulario-----*/
+
+
+form{
+    margin: 50px;
+}
+
+textarea {
+    outline: none;
+    resize: none;
+    border-radius: 10px;
+}
+
+
+.btn-send{
+    background: #fff;
+    border: solid 1px red;
+    border-radius: 10px;
+
+}
+
+.btn-send:hover{
+    transition: 0.7s;
+    color: white;
+    background: #ff0000;
+    border: solid 1px red;
+    border-radius: 10px;
+
+}
+
+
+
+.tipo-cardapio{
+
+    cursor: pointer;
+    background-color: black;
+    border: solid 1px red;
+    border-radius: 10px;
+    font-size: 30px;
+    display: inline-block;
+    margin: 80px;
+    padding: 50px;
+    color: white;
+}
+
+
+
+
+/*---Imagens da Comida-----*/
+
+.container-c{
+    margin: 70px auto 25px;
+    display: inline-block;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.container-c .c-item{
+    cursor: context-menu;
+    position: relative;
+    margin: 10px;
+    display: inline-block;
+    height: 320px;
+    width: 300px;
+    box-sizing: border-box;
+
+
+}
+
+.container-c .c-item .img-c{
+    position: relative;
+    overflow: hidden;
+}
+
+.container-c .c-item .img-c img{
+    border-radius: 10px;
+    max-width: 300px;
+    height: 320px;
+    transition: transform 2s;
+}
+
+
+.container-c .c-item:hover .img-c img{
+    transform:scale(1.2);
+}
+
+
+.container-c .c-item .sub-img{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    background: rgba(0,0,0,0.8);
+    transform: scaleY(0);
+    transition: transform 0.7s;
+}
+
+.container-c .c-item:hover .sub-img{
+    transform: scaleY(1);
+}
+
+
+.container-c .c-item .sub-img .content-img{
+    color: white;
+}
+
+#comum{
+    color: white;
+}
+
+.footer-p{
+    color: white;
+    opacity: 0.9;
+}
+
+.card-row {
+    list-style: none;
+}
+
+.card{
+     display: inline-block;
+    margin: 30px;
+
+}
+
+/*------ORÇAMENTO--------*/
+
+form{
+    margin: 50px;
+}
+
+
+
+.caixa{
+    outline: none;
+    border-radius: 10px;
+    text-decoration: none;
+    margin: 10px;
+}
+
+
+.invalida{
+    transition-duration: 0.1s;
+
+  border: solid 1px red;
+}
+.btn-send{
+    background: #fff;
+    border: solid 1px red;
+    border-radius: 10px;
+
+}
+
+.btn-send:hover{
+    transition: 0.7s;
+    color: white;
+    background: #ff0000;
+    border: solid 1px red;
+    border-radius: 10px;
+
+}
+
+.btn-add{
+    margin: 5px;
+    padding: 5px;
+    background: #fff;
+    border: solid 1px red;
+    border-radius: 10px;
+
+}
+
+.btn-add:hover{
+    transition: 0.7s;
+    color: white;
+    background: #ff0000;
+    border: solid 1px red;
+    border-radius: 10px;
+
+}
+
+
+
+
+
+
+.carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+  outline: none;
+  background-image: none;
+}
+
+.carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 40px;
+  color: red;
+}
+
+.scroll{
+    overflow: auto;
+}
+
+a{
+    color: red;
+}
+
+a:hover{
+    color: red;
+}

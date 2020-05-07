@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+
+<html lang="pt">
+    <head>
+        
+        <meta charset="utf-8"/>
+        <title>Masse Buffet</title>
+        <!---RESET & BOOTSTRAP---->
+        
+        <link href="css/reset.css" type="text/css" rel="stylesheet">
+        <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet">
+        
+        <!---- UNIQUE CSS----->
+        
+        <link href="css/style.css" type="text/css" rel="stylesheet">
+        
+        <!---- Fonts----->
+        
+        <link href="font/Kalam-Bold.ttf" rel="stylesheet">
+        <link href="font/Kalam-Light.ttf" rel="stylesheet">
+        <link href="font/Kalam-Regular.ttf" rel="stylesheet">
+        <link href="font/Galada/Galada-Regular.ttf" rel="stylesheet">
+        
+        
+    </head>
+    
+    
+    <body>
+        
+        
+        
+        
+        <header>
+        
+        <div class="container-fluid bg-main">    
+        <nav class="navbar navbar-expand-lg navbar-light ">
+          <a class="navbar-brand font-weight-bold" href="index.html"><h1>Masse Buffet</h1></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="cardapio.html">Cardápio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="galeria.html">Galeria</a>
+              </li>
+               <li class="nav-item">
+                <a class="nav-link" href="orcamento.html">Orçamento</a>
+              </li>
+                <li class="nav-item">
+                    <a href="fale-conosco.html" class="nav-link"><button class="btn contato-btn-primary">Fale Conosco</button></a>
+                </li>
+            </ul>
+          </div>
+        </nav>
+        <div class="container">
+                    <div class="jumbotron text-center">
+                          <h1 class="display-4">- Orçamento - </h1>
+                            
+                          
+                          
+                    </div>
+                    
+            
+            
+            
+            </div>
+            
+        </div>
+            
+        
+        
+        </header>
+        
+        
+        
+        
+        <main>
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active scroll" data-interval="false">
+                <div class="text-center">    
+                    <img class="separador" src="img/separador.png" id="comum">
+                </div>
+                 <h3 class="text-center" >Como funciona o orçamento?</h3>
+                    <p class="lead text-center" >É simples, basta escolher o pacote desejado e informar a quantidade de pessoas do evento.</p>
+                    <p class="lead text-center">Arraste para o lado para fazer seu orçamento ou <a href="cardapio.html">clique aqui</a> para visulizar os cardárpios.</p>
+                       <div class="text-center">    
+                    <img class="separador" src="img/separador.png" id="comum">
+                </div>
+                       
+                    
+                    
+                    
+                </div>
+            
+                  
+            <div class="carousel-item scroll" data-interval="false">
+            <form>
+           
+            <div class="entrada">
+            
+            
+                <label for="txtItem">Tipo de Cardápio </label>
+    
+            <select class="form-control" id="sel"
+                   placeholder="Nome do Item" onchange="campoSelect(this.value)" required>
+                <option value="" selected disabled>Selecione o Tipo</option>
+                <option value="25.00">Evento Comum</option>    
+                <option value="50.00">Evento Itália</option>    
+                <option value="90.00">Evento Premium</option>    
+                
+            
+                
+                
+            </select>
+                
+            
+            <br>
+                
+            <label for="precoItem">Preçoo por Pessoa</label>    
+            <input class="form-control" type="number" id="precoPessoa"
+                   placeholder="00,00"
+                   min="1" disabled/>
+            <br>
+                
+                
+            <label for="txtItem">Quantidade</label>    
+            <input class="form-control" type="number" id="quantidadeItem"
+                   placeholder="Quantidade de pessoas"
+                   max="100"min="1"/>
+            <br/>
+            
+                    <button class="btn-add" type="button" onclick="addItem();">Calcular</button> 
+            </div>    
+            
+            
+           <table class="table">
+              <tbody id="corpo">
+                <tr>
+                  <th scope="col">Pacote</th>
+                  <th scope="col">Valor</th>
+                  <th scope="col">Quantidade</th>
+                  <th scope="col">Total</th>
+                </tr>
+              </tbody>
+            </table>
+            
+         
+
+            
+            
+        </form>
+                    
+                    
+               
+                    
+                
+               
+                </div>
+                  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                              </div>
+            </div>
+                
+               
+            
+            
+            
+         
+        
+        
+        
+            
+            
+            
+            
+            
+            
+            
+        
+        </main>
+        
+        
+           
+        
+        
+        
+        
+        
+        
+        
+        
+     
+    
+        
+        
+        
+        
+        
+        
+        
+        
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+    
+
+</html>
